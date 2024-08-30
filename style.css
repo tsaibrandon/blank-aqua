@@ -94,3 +94,55 @@ body {
     bottom: -4px;
     left: 20px;
 }
+
+/* Hero Styling */
+
+#hero {
+    /* adding background image */
+    background-image: url(img/hero4.png);
+
+    /* make background image fill the entire screen */
+    height: 90vh;
+    width: 100%;
+
+    /* centering the background */
+    background-position: top 25% right 0;
+    background-size: cover;
+
+    /* Move text to line up with where the logo starts */
+    padding: 0 80px;
+
+    /* center the text in its column */
+    display: flex;
+    align-items: flex-start;
+    /* this will keep the text in a coulumn */
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero h4 {
+    /* adds space between the h4 and the rest of the text */
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+    /* adding a background image for the button */
+    background-image: url(img/button.png);
+
+    /* removing background background */
+    background-color: transparent;
+
+    /* button text color/border */
+    color: #088178;
+    border: 0;
+
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
