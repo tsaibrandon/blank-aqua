@@ -57,6 +57,12 @@ body {
     padding: 20px 80px;
     background-color: #e3e6f3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    /* making the header stay at the top */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
@@ -140,9 +146,85 @@ body {
     color: #088178;
     border: 0;
 
+    /* making the button background larger */
     padding: 14px 80px 14px 65px;
+
+    /* idk */
     background-repeat: no-repeat;
+
+    /* when the cursor mouses over then it becomes a pointer */
     cursor: pointer;
+
+    /* button font styling */
     font-weight: 700;
     font-size: 15px;
+}
+
+/* Feature Styling */
+
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#features .feature-box {
+    /* creating the box */
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+
+    /* making the box visible */
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+
+    /* not sure */
+    border-radius: 4px;
+    margin: 15px 0px;
+}
+
+#features .feature-box:hover {
+    /* hover effect that reduces the box shadow and increases the radius */
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#features .feature-box img {
+    /* adding space between the img and feature title */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#features .feature-box h6 {
+    /* make the box hug the words/removing the space on left and right */
+    display: inline-block;
+
+    /* creating a background for the feature name */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#features .feature-box:nth-child(2) h6 {
+    /* changing the background color of each feature title */
+    /* nth-child(#) is to individually select an h6 */
+    background-color: #cdebbc;
+}
+
+#features .feature-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#features .feature-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#features .feature-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+#features .feature-box:nth-child(6) h6 {
+    background-color: #fff2e5;
 }
