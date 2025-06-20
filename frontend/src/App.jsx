@@ -5,10 +5,10 @@ import Collections from './pages/Collections'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Product from './pages/Product'
-import Cart from '.pages/Cart'
-import Login from '.pages/Login'
-import PlaceOrder from '.pages/PlaceOrder'
-import Orders from '.pages/Orders'
+import Cart from './pages/Cart'
+import Login from './pages/Login'
+import PlaceOrder from './pages/PlaceOrder'
+import Orders from './pages/Orders'
 import NavBar from './components/NavBar'
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
     <div className = 'px-4 sm:px-[5vw] md:px-[7vw] lg:px-[pvw]'>
       
       <NavBar />
-      
+
       <Routes>
         <Route path='/' element= {<Home/>} />
         <Route path='/collection' element= {<Collections/>} />
