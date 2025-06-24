@@ -3,7 +3,7 @@ import {Link,NavLink} from 'react-router-dom'
 
 const NavBar = () => {
 
-    const [visible,setVisible] = useState(false);
+    // const [visible,setVisible] = useState(false);
 
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
@@ -46,7 +46,7 @@ const NavBar = () => {
             {/* <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>10</p> */}
         </Link>
 
-        <p onClick={()=>setVisible(ture)} className='w-5 cursor-pointer sm:hidden'>MENU</p>
+        {/* <p onClick={()=>setVisible(ture)} className='w-5 cursor-pointer sm:hidden'>MENU</p> */}
       </div>
     </div>
   )
